@@ -5,7 +5,7 @@ import '../../src/index.css'
 import '../../src/App.css'
 import About from './About';
 import Projects from './Projects';
-import Contact from './contact';
+import Contact from './Contact';
 const Home = () => {
 
 
