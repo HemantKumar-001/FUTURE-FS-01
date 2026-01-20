@@ -54,9 +54,13 @@ const Home = () => {
           </div>
         </main>
 
+
+
+
+
         <section className="right-image-area">
           <div className="glow-ring"></div>
-          <img src={import.meta.env.VITE_IMAGE} alt="Hemant Profile" className="dev-image" />
+          <img src="https://res.cloudinary.com/dnasnvwt7/image/upload/v1768932258/_hero_itorlp.png" alt="Hemant Profile" className="dev-image" />
         </section>
       </div>
 
