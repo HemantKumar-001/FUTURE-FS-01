@@ -56,7 +56,7 @@ const Home = () => {
 
         <section className="right-image-area">
           <div className="glow-ring"></div>
-          <img src="../src/assets/_hero.png" alt="Hemant Profile" className="dev-image" />
+          <img src={import.meta.env.VITE_IMAGE} alt="Hemant Profile" className="dev-image" />
         </section>
       </div>
 
