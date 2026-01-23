@@ -18,57 +18,9 @@ const Projects = () => {
 
   useEffect(() => {
     callApi();
-  }, [])
+  }, []);
 
-
-  const projectsData = [
-    {
-      id: 1,
-      title: "E-Commerce Platform",
-      desc: "Full-featured MERN store with Redux state management and Stripe integration.",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80",
-      liveLink: "https://example.com",
-      githubLink: "https://github.com/HemantKumar-001",
-      tags: ["MERN", "Redux", "Stripe"]
-    },
-    {
-      id: 2,
-      title: "Real Estate App",
-      desc: "Property listing site with advanced filters and Google Maps API.",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80",
-      liveLink: "https://example.com",
-      githubLink: "https://github.com/HemantKumar-001",
-      tags: ["React", "Node", "Firebase"]
-    },
-    {
-      id: 3,
-      title: "Social Media Dashboard",
-      desc: "Real-time analytics dashboard with Chart.js and JWT authentication.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-      liveLink: "https://example.com",
-      githubLink: "https://github.com/HemantKumar-001",
-      tags: ["Express", "MongoDB", "Charts"]
-    },
-    {
-      id: 4,
-      title: "Fitness Tracker",
-      desc: "A health app to track workouts, calories, and user progress over time.",
-      image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80",
-      liveLink: "https://example.com",
-      githubLink: "https://github.com/HemantKumar-001",
-      tags: ["React Native", "API"]
-    },
-    {
-      id: 5,
-      title: "AI Chat Application",
-      desc: "Chatbot integrated with OpenAI API for automated customer support.",
-      image: "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?auto=format&fit=crop&w=800&q=80",
-      liveLink: "https://example.com",
-      githubLink: "https://github.com/HemantKumar-001",
-      tags: ["OpenAI", "Socket.io"]
-    }
-  ];
-
+  
 
 
   return (
