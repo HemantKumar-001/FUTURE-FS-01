@@ -28,11 +28,6 @@ const ProjectsForm = () => {
         formdata.append('tags', JSON.stringify(tagsArray));
         formdata.append('liveLink', liveLink)
         formdata.append('githubLink', gitLink);
-        console.log(formdata);
-
-
-        console.log(formdata.tags);
-
 
          const headers = {
       authorization: sessionStorage.getItem('token')
@@ -49,13 +44,10 @@ const ProjectsForm = () => {
             setInterval(() => {
                 nav('/');
             }, 2000);
-            console.log(res);
         }).catch((err) => {
             toast.error('fail to add the project');
             console.log(err);
         })
-        console.log('working');
-
 
         setTitle('');
         setDesc('');

@@ -13,10 +13,6 @@ const Contact = () => {
 
   const handleBtn = (e) => {
     e.preventDefault();
-    console.log(email);
-    console.log(description);
-    console.log(name);
-
     const data = {
       name: name,
       message: description,
@@ -26,7 +22,6 @@ const Contact = () => {
 
 
     axios.post(`${import.meta.env.VITE_API_URL}/admin/send-mail`, data).then((res) => {
-      console.log(res);
       toast.success('Your mail has been send to Hemant');
 
     })

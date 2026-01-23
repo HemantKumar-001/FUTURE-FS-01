@@ -8,7 +8,6 @@ const Projects = () => {
 
   function callApi() {
     axios.post(`${import.meta.env.VITE_API_URL}/admin/show`).then((res) => {
-      console.log(res.data.data);
       setProjects(res.data.data);
     })
       .catch((err) => {
@@ -20,7 +19,7 @@ const Projects = () => {
     callApi();
   }, []);
 
-  
+
 
 
   return (

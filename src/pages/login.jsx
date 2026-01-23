@@ -22,12 +22,11 @@ const Login = () => {
     }
 
     axios.post(`${import.meta.env.VITE_API_URL}/admin/login`, data).then((res) => {
-      console.log(res.data);
       toast.success('Admin Logged In Successfully');
       if (data) {
-        sessionStorage.setItem('isAuthenticated', 'true'); // Store state in localStorage
+        sessionStorage.setItem('isAuthenticated', 'true'); 
         setInterval(() => {
-             nav('/projectAddingForm', { replace: true }); // Redirect to home page after login
+             nav('/projectAddingForm', { replace: true }); 
         }, 2000)
      
       } else {
@@ -35,7 +34,6 @@ const Login = () => {
       }
       sessionStorage.setItem('token', res.data.token);
     }).catch((err) => {
-      console.log(err);
       toast.error('Admin has authority to manage projects');
     })
 
